@@ -1,17 +1,19 @@
 class PagesController < ApplicationController
-	def home
-		
-	end
+  def profile
+  end
 
-	def about
-		
-	end
+  def mentor
+  end
 
-	def contact
+  def location
+  end
 
-	end
+  def categories
+  end
 
-	def profile
+  def myMentors
+  end
 
-	end
+  def about
+  end
 end

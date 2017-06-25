@@ -1,2 +1,28 @@
-<h1>Pages#profile</h1>
-<p>Find me in app/views/pages/profile.html.erb</p>
+<!-- Mission Statement -->
+
+<div id="page-content-wrapper">
+    <div class="container-fluid">
+	    <div class="jumbotron">
+	    	<h1>Welcome to Manatee</h1>
+	    	<p>Manatee is a web app that connects mentors with mentees. It's a free service so anyone can join. You can build meaningful connections and explore potential educational and career options. Having a mentor who can offer guidance can make it easier for you to make career and education-related choices. In turn, you can take on a mentee for something else that you may have experience in.</p>
+	    	<p>
+	    	  <div class="row">
+	    	    <div class="col-lg-6">
+		          <span class="btn btn-lg btn-primary register_buttons" role="button">
+		          	<%= link_to 'Register as Mentee', mentors_index_path %>
+		          </span>
+		        </div>
+		        <div class="col-lg-6">
+		          <span class="btn btn-lg btn-primary register_buttons" role="button">
+		          	<%= link_to 'Register as Mentor', pages_mentor_path %>
+		          </span>
+		        </div>
+	          </div>
+	        </p>
+		</div>
+	</div>
+</div>
+
+<!-- Mentor Mentee Benefits -->
+
+

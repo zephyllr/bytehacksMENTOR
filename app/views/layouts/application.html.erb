@@ -6,9 +6,54 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
   </head>
 
   <body>
+
+  <div id="wrapper">
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand"><%= link_to 'Manatee', pages_about_path %></li>
+            <li><%= link_to 'About', pages_about_path %></li>
+            <li><%= link_to 'Profile', pages_profile_path %></li>
+            <li>
+                <%= link_to 'Mentor', pages_mentor_path %>
+                <%= link_to 'Location', pages_location_path %>
+                <%= link_to 'Categories', pages_categories_path %>
+            </li>
+            <li><%= link_to 'My Mentors', pages_myMentors_path %></li>
+        </ul>
+    </div>
+
+    <!-- /#sidebar-wrapper -->
+
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">MANATEE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   </div>
+
     <%= yield %>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
   </body>
 </html>

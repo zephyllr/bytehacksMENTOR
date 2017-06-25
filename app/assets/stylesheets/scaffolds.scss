@@ -8,13 +8,13 @@ body {
 }
 
 p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   font-size: 13px;
-  line-height: 18px;
+  line-height: 30px;
 }
 
 pre {
-  background-color: #eee;
+  background-color: red;
   padding: 10px;
   font-size: 11px;
 }
@@ -22,14 +22,16 @@ pre {
 a {
   color: #000;
 
-  &:visited {
-    color: #666;
-  }
+&:visited {
+    color: #ffffff;
+}
 
-  &:hover {
+&:hover {
     color: #fff;
-    background-color: #000;
-  }
+    text-decoration: none;
+    
+}
+    
 }
 
 th {
@@ -70,7 +72,7 @@ div {
     font-size: 12px;
     margin: -7px -7px 0;
     background-color: #c00;
-    color: #fff;
+    color: #000;
   }
 
   ul li {
@@ -82,4 +84,3 @@ div {
 label {
   display: block;
 }
-

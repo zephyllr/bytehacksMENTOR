@@ -8674,3 +8674,1241 @@ Processing by PagesController#about as HTML
 Completed 200 OK in 44ms (Views: 42.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/mentors/index" for 127.0.0.1 at 2017-06-25 02:42:11 -0400
+Processing by MentorsController#index as HTML
+  Rendering mentors/index.html.erb within layouts/application
+  [1m[36mMentor Load (0.6ms)[0m  [1m[34mSELECT "mentors".* FROM "mentors"[0m
+  Rendered mentors/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 76ms (Views: 72.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/mentors/1" for 127.0.0.1 at 2017-06-25 02:42:13 -0400
+Processing by MentorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMentor Load (0.2ms)[0m  [1m[34mSELECT  "mentors".* FROM "mentors" WHERE "mentors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering mentors/show.html.erb within layouts/application
+  Rendered mentors/show.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 56ms (Views: 52.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mentors" for 127.0.0.1 at 2017-06-25 02:42:16 -0400
+Processing by MentorsController#index as HTML
+  Rendering mentors/index.html.erb within layouts/application
+  [1m[36mMentor Load (0.2ms)[0m  [1m[34mSELECT "mentors".* FROM "mentors"[0m
+  Rendered mentors/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 69ms (Views: 66.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mentors/1" for 127.0.0.1 at 2017-06-25 02:43:31 -0400
+Processing by MentorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMentor Load (0.2ms)[0m  [1m[34mSELECT  "mentors".* FROM "mentors" WHERE "mentors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering mentors/show.html.erb within layouts/application
+  Rendered mentors/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 65ms (Views: 61.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mentors/1/edit" for 127.0.0.1 at 2017-06-25 02:43:33 -0400
+Processing by MentorsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMentor Load (0.1ms)[0m  [1m[34mSELECT  "mentors".* FROM "mentors" WHERE "mentors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering mentors/edit.html.erb within layouts/application
+  Rendered mentors/_form.html.erb (5.2ms) [cache miss]
+  Rendered mentors/edit.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 71ms (Views: 66.9ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/mentors/1" for 127.0.0.1 at 2017-06-25 02:44:12 -0400
+Processing by MentorsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SsDcdYNe1EqBoyNc2XLDlOj+nNymUYCenHtCYanf3en9ds/QO70kgURetQjCaQY1PKEv5vs+X+vssWo5BZ1jDw==", "mentor"=>{"first_name"=>"Michael ", "last_name"=>"Law", "email"=>"michaellaw@gmx.com", "skills"=>"Kickboxing, Ruby on Rails, Back-end Web Dev"}, "commit"=>"Update Mentor", "id"=>"1"}
+  [1m[36mMentor Load (0.1ms)[0m  [1m[34mSELECT  "mentors".* FROM "mentors" WHERE "mentors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[33mUPDATE "mentors" SET "skills" = ?, "updated_at" = ? WHERE "mentors"."id" = ?[0m  [["skills", "Kickboxing, Ruby on Rails, Back-end Web Dev"], ["updated_at", "2017-06-25 06:44:12.347270"], ["id", 1]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/mentors/1
+Completed 302 Found in 15ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/mentors/1" for 127.0.0.1 at 2017-06-25 02:44:12 -0400
+Processing by MentorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMentor Load (0.2ms)[0m  [1m[34mSELECT  "mentors".* FROM "mentors" WHERE "mentors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering mentors/show.html.erb within layouts/application
+  Rendered mentors/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 40ms (Views: 36.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mentors" for 127.0.0.1 at 2017-06-25 02:44:14 -0400
+Processing by MentorsController#index as HTML
+  Rendering mentors/index.html.erb within layouts/application
+  [1m[36mMentor Load (0.4ms)[0m  [1m[34mSELECT "mentors".* FROM "mentors"[0m
+  Rendered mentors/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 53ms (Views: 50.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pages/about" for 127.0.0.1 at 2017-06-25 02:50:38 -0400
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 57ms (Views: 54.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/about" for 127.0.0.1 at 2017-06-25 02:50:44 -0400
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 40ms (Views: 37.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/profile" for 127.0.0.1 at 2017-06-25 02:50:45 -0400
+Processing by PagesController#profile as HTML
+  Rendering pages/profile.html.erb within layouts/application
+  Rendered pages/profile.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 51ms (Views: 47.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-25 03:05:41 -0400
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 102ms (Views: 93.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mentors/index" for 127.0.0.1 at 2017-06-25 03:05:47 -0400
+Processing by MentorsController#index as HTML
+  Rendering mentors/index.html.erb within layouts/application
+  [1m[36mMentor Load (1.1ms)[0m  [1m[34mSELECT "mentors".* FROM "mentors"[0m
+  Rendered mentors/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 61ms (Views: 57.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/mentors/new" for 127.0.0.1 at 2017-06-25 03:05:50 -0400
+Processing by MentorsController#new as HTML
+  Rendering mentors/new.html.erb within layouts/application
+  Rendered mentors/_form.html.erb (9.8ms) [cache miss]
+  Rendered mentors/new.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 58ms (Views: 55.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/mentors" for 127.0.0.1 at 2017-06-25 03:07:10 -0400
+Processing by MentorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mhwtObqcX8FZ7aS8bLoJ8DDFvHG2bsCVbvuyGhI/vMlRe2YfkGODqsRUTmv9y1Hy9RuUV+au13UW283DDwrT3A==", "mentor"=>{"first_name"=>"Stacey", "last_name"=>"Lee", "email"=>"staceyli34@yahoo.com", "skills"=>"Python, Track and Field"}, "commit"=>"Create Mentor"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "mentors" ("first_name", "last_name", "email", "skills", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Stacey"], ["last_name", "Lee"], ["email", "staceyli34@yahoo.com"], ["skills", "Python, Track and Field"], ["created_at", "2017-06-25 07:07:10.481700"], ["updated_at", "2017-06-25 07:07:10.481700"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/mentors/4
+Completed 302 Found in 12ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/mentors/4" for 127.0.0.1 at 2017-06-25 03:07:10 -0400
+Processing by MentorsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMentor Load (0.2ms)[0m  [1m[34mSELECT  "mentors".* FROM "mentors" WHERE "mentors"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering mentors/show.html.erb within layouts/application
+  Rendered mentors/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 39ms (Views: 34.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mentors" for 127.0.0.1 at 2017-06-25 03:07:13 -0400
+Processing by MentorsController#index as HTML
+  Rendering mentors/index.html.erb within layouts/application
+  [1m[36mMentor Load (0.2ms)[0m  [1m[34mSELECT "mentors".* FROM "mentors"[0m
+  Rendered mentors/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 53ms (Views: 49.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mentors/new" for 127.0.0.1 at 2017-06-25 03:07:17 -0400
+Processing by MentorsController#new as HTML
+  Rendering mentors/new.html.erb within layouts/application
+  Rendered mentors/_form.html.erb (2.8ms) [cache miss]
+  Rendered mentors/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 50ms (Views: 47.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/mentors" for 127.0.0.1 at 2017-06-25 03:09:42 -0400
+Processing by MentorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uq/R265+B/Qd0stPzj2oxRMEscL6FlxV80Vo9wKPbdBxyJr9hIHbn4BrIZhfTPDH1tqZ5KrWS7WLZRcuH7oCxQ==", "mentor"=>{"first_name"=>"Aimee", "last_name"=>"Chen", "email"=>"amyc@gmail.com", "skills"=>"Ruby, Xcode, Public Speaking"}, "commit"=>"Create Mentor"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "mentors" ("first_name", "last_name", "email", "skills", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Aimee"], ["last_name", "Chen"], ["email", "amyc@gmail.com"], ["skills", "Ruby, Xcode, Public Speaking"], ["created_at", "2017-06-25 07:09:42.116837"], ["updated_at", "2017-06-25 07:09:42.116837"]]
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/mentors/5
+Completed 302 Found in 11ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/mentors/5" for 127.0.0.1 at 2017-06-25 03:09:42 -0400
+Processing by MentorsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mMentor Load (0.2ms)[0m  [1m[34mSELECT  "mentors".* FROM "mentors" WHERE "mentors"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering mentors/show.html.erb within layouts/application
+  Rendered mentors/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 41ms (Views: 37.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mentors" for 127.0.0.1 at 2017-06-25 03:09:44 -0400
+Processing by MentorsController#index as HTML
+  Rendering mentors/index.html.erb within layouts/application
+  [1m[36mMentor Load (0.3ms)[0m  [1m[34mSELECT "mentors".* FROM "mentors"[0m
+  Rendered mentors/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 52ms (Views: 49.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/mentors/new" for 127.0.0.1 at 2017-06-25 03:09:47 -0400
+Processing by MentorsController#new as HTML
+  Rendering mentors/new.html.erb within layouts/application
+  Rendered mentors/_form.html.erb (2.7ms) [cache miss]
+  Rendered mentors/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 47ms (Views: 44.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/mentors" for 127.0.0.1 at 2017-06-25 03:10:15 -0400
+Processing by MentorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"q020NMj546OyL2oj/aQ+HRkstHfxPtZIxib09+K2n8pgKv8S4gY/yC+WgPRs1WYf3PKcUaH+wai+Bosu/4Pw3w==", "mentor"=>{"first_name"=>"Elle", "last_name"=>"Baker", "email"=>"ellebaker@hotmail.com", "skills"=>"BC Calc, Physics "}, "commit"=>"Create Mentor"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "mentors" ("first_name", "last_name", "email", "skills", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Elle"], ["last_name", "Baker"], ["email", "ellebaker@hotmail.com"], ["skills", "BC Calc, Physics "], ["created_at", "2017-06-25 07:10:15.390996"], ["updated_at", "2017-06-25 07:10:15.390996"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/mentors/6
+Completed 302 Found in 4ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/mentors/6" for 127.0.0.1 at 2017-06-25 03:10:15 -0400
+Processing by MentorsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mMentor Load (0.1ms)[0m  [1m[34mSELECT  "mentors".* FROM "mentors" WHERE "mentors"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering mentors/show.html.erb within layouts/application
+  Rendered mentors/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 42ms (Views: 38.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/mentors" for 127.0.0.1 at 2017-06-25 03:10:17 -0400
+Processing by MentorsController#index as HTML
+  Rendering mentors/index.html.erb within layouts/application
+  [1m[36mMentor Load (0.2ms)[0m  [1m[34mSELECT "mentors".* FROM "mentors"[0m
+  Rendered mentors/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 46ms (Views: 43.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mentors/new" for 127.0.0.1 at 2017-06-25 03:10:19 -0400
+Processing by MentorsController#new as HTML
+  Rendering mentors/new.html.erb within layouts/application
+  Rendered mentors/_form.html.erb (3.3ms) [cache miss]
+  Rendered mentors/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 51ms (Views: 47.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/mentors" for 127.0.0.1 at 2017-06-25 03:10:39 -0400
+Processing by MentorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GBlyItvBCA5UREoHgvM+umFIXFG5n4OBsB3GXEC9nfPTfjkE8T7UZcn9oNATgma4pJZ0d+lflGHIPbmFXYjy5g==", "mentor"=>{"first_name"=>"Jerry", "last_name"=>"Thomas", "email"=>"tomjerry@goldmansachs.com", "skills"=>"Singing, Business"}, "commit"=>"Create Mentor"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "mentors" ("first_name", "last_name", "email", "skills", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Jerry"], ["last_name", "Thomas"], ["email", "tomjerry@goldmansachs.com"], ["skills", "Singing, Business"], ["created_at", "2017-06-25 07:10:39.859775"], ["updated_at", "2017-06-25 07:10:39.859775"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/mentors/7
+Completed 302 Found in 8ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/mentors/7" for 127.0.0.1 at 2017-06-25 03:10:39 -0400
+Processing by MentorsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mMentor Load (0.2ms)[0m  [1m[34mSELECT  "mentors".* FROM "mentors" WHERE "mentors"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering mentors/show.html.erb within layouts/application
+  Rendered mentors/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 43ms (Views: 37.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mentors" for 127.0.0.1 at 2017-06-25 03:10:41 -0400
+Processing by MentorsController#index as HTML
+  Rendering mentors/index.html.erb within layouts/application
+  [1m[36mMentor Load (1.0ms)[0m  [1m[34mSELECT "mentors".* FROM "mentors"[0m
+  Rendered mentors/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 64ms (Views: 60.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/mentors/new" for 127.0.0.1 at 2017-06-25 03:10:44 -0400
+Processing by MentorsController#new as HTML
+  Rendering mentors/new.html.erb within layouts/application
+  Rendered mentors/_form.html.erb (7.7ms) [cache miss]
+  Rendered mentors/new.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 55ms (Views: 52.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/mentors" for 127.0.0.1 at 2017-06-25 03:22:40 -0400
+Processing by MentorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rAaz5chF93HPFDHNrY5UcMEobfPDcvYYlnMRa+nTzGFnYfjD4rorGlKt2xo8/wxyBPZF1ZOy4fjuU26y9OajdA==", "mentor"=>{"first_name"=>"Sofia", "last_name"=>"Vergara", "email"=>"sofverg@abc.com", "skills"=>"Acting, Spanish "}, "commit"=>"Create Mentor"}
+  [1m[35m (0.9ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.8ms)[0m  [1m[32mINSERT INTO "mentors" ("first_name", "last_name", "email", "skills", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sofia"], ["last_name", "Vergara"], ["email", "sofverg@abc.com"], ["skills", "Acting, Spanish "], ["created_at", "2017-06-25 07:22:40.132797"], ["updated_at", "2017-06-25 07:22:40.132797"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/mentors/8
+Completed 302 Found in 41ms (ActiveRecord: 4.8ms)
+
+
+Started GET "/mentors/8" for 127.0.0.1 at 2017-06-25 03:22:40 -0400
+Processing by MentorsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mMentor Load (0.3ms)[0m  [1m[34mSELECT  "mentors".* FROM "mentors" WHERE "mentors"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering mentors/show.html.erb within layouts/application
+  Rendered mentors/show.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 131ms (Views: 123.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/mentors" for 127.0.0.1 at 2017-06-25 03:22:51 -0400
+Processing by MentorsController#index as HTML
+  Rendering mentors/index.html.erb within layouts/application
+  [1m[36mMentor Load (0.4ms)[0m  [1m[34mSELECT "mentors".* FROM "mentors"[0m
+  Rendered mentors/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 76ms (Views: 71.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/mentors/new" for 127.0.0.1 at 2017-06-25 03:22:57 -0400
+Processing by MentorsController#new as HTML
+  Rendering mentors/new.html.erb within layouts/application
+  Rendered mentors/_form.html.erb (11.7ms) [cache miss]
+  Rendered mentors/new.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 68ms (Views: 65.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/mentors" for 127.0.0.1 at 2017-06-25 03:23:17 -0400
+Processing by MentorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"C+6/lbVFOFZit6cJuT0upf+aaeZFRVTVXN3yfTuh5UzAifSzn7rkPf8OTd4oTHanOkRBwBWFQzUk/Y2kJpSKWQ==", "mentor"=>{"first_name"=>"Mary", "last_name"=>"Lamb", "email"=>"mary@mary.com", "skills"=>"Farming, Dancing"}, "commit"=>"Create Mentor"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "mentors" ("first_name", "last_name", "email", "skills", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Mary"], ["last_name", "Lamb"], ["email", "mary@mary.com"], ["skills", "Farming, Dancing"], ["created_at", "2017-06-25 07:23:17.787076"], ["updated_at", "2017-06-25 07:23:17.787076"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/mentors/9
+Completed 302 Found in 8ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/mentors/9" for 127.0.0.1 at 2017-06-25 03:23:17 -0400
+Processing by MentorsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mMentor Load (0.1ms)[0m  [1m[34mSELECT  "mentors".* FROM "mentors" WHERE "mentors"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering mentors/show.html.erb within layouts/application
+  Rendered mentors/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 48ms (Views: 44.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/mentors" for 127.0.0.1 at 2017-06-25 03:23:19 -0400
+Processing by MentorsController#index as HTML
+  Rendering mentors/index.html.erb within layouts/application
+  [1m[36mMentor Load (0.3ms)[0m  [1m[34mSELECT "mentors".* FROM "mentors"[0m
+  Rendered mentors/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 100ms (Views: 95.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/mentors/new" for 127.0.0.1 at 2017-06-25 03:23:21 -0400
+Processing by MentorsController#new as HTML
+  Rendering mentors/new.html.erb within layouts/application
+  Rendered mentors/_form.html.erb (2.8ms) [cache miss]
+  Rendered mentors/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 56ms (Views: 53.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/mentors" for 127.0.0.1 at 2017-06-25 03:23:50 -0400
+Processing by MentorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LcQqhct5B5euXAbErEOF31aW5JfskD6QSka1t2PIN0jmo2Gj4Ybb/DPl7BM9Mt3dk0jMsbxQKXAyZspufv1YXQ==", "mentor"=>{"first_name"=>"Malia", "last_name"=>"Obama", "email"=>"mobama@harvard.edu", "skills"=>"SAT, Public Speaking, TV production"}, "commit"=>"Create Mentor"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "mentors" ("first_name", "last_name", "email", "skills", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Malia"], ["last_name", "Obama"], ["email", "mobama@harvard.edu"], ["skills", "SAT, Public Speaking, TV production"], ["created_at", "2017-06-25 07:23:50.360523"], ["updated_at", "2017-06-25 07:23:50.360523"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/mentors/10
+Completed 302 Found in 6ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/mentors/10" for 127.0.0.1 at 2017-06-25 03:23:50 -0400
+Processing by MentorsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mMentor Load (0.1ms)[0m  [1m[34mSELECT  "mentors".* FROM "mentors" WHERE "mentors"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering mentors/show.html.erb within layouts/application
+  Rendered mentors/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 38ms (Views: 34.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/mentors" for 127.0.0.1 at 2017-06-25 03:23:53 -0400
+Processing by MentorsController#index as HTML
+  Rendering mentors/index.html.erb within layouts/application
+  [1m[36mMentor Load (0.4ms)[0m  [1m[34mSELECT "mentors".* FROM "mentors"[0m
+  Rendered mentors/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 49ms (Views: 47.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/mentors/new" for 127.0.0.1 at 2017-06-25 03:23:56 -0400
+Processing by MentorsController#new as HTML
+  Rendering mentors/new.html.erb within layouts/application
+  Rendered mentors/_form.html.erb (8.3ms) [cache miss]
+  Rendered mentors/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 62ms (Views: 59.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/mentors" for 127.0.0.1 at 2017-06-25 03:24:44 -0400
+Processing by MentorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lnrkb3t83vHgQ1ZmivaWXtg9uXpPKqpscTZg83CJ+HpdHa9JUYMCmn36vLEbh85cHeORXB/qvYwJFh8qbbyXbw==", "mentor"=>{"first_name"=>"Ashley", "last_name"=>"Gavin", "email"=>"ashley@girlswhocode.com", "skills"=>"Comedy, Animal Handling"}, "commit"=>"Create Mentor"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "mentors" ("first_name", "last_name", "email", "skills", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Ashley"], ["last_name", "Gavin"], ["email", "ashley@girlswhocode.com"], ["skills", "Comedy, Animal Handling"], ["created_at", "2017-06-25 07:24:44.759943"], ["updated_at", "2017-06-25 07:24:44.759943"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/mentors/11
+Completed 302 Found in 5ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/mentors/11" for 127.0.0.1 at 2017-06-25 03:24:44 -0400
+Processing by MentorsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mMentor Load (0.1ms)[0m  [1m[34mSELECT  "mentors".* FROM "mentors" WHERE "mentors"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering mentors/show.html.erb within layouts/application
+  Rendered mentors/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 36ms (Views: 33.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/mentors" for 127.0.0.1 at 2017-06-25 03:24:46 -0400
+Processing by MentorsController#index as HTML
+  Rendering mentors/index.html.erb within layouts/application
+  [1m[36mMentor Load (0.4ms)[0m  [1m[34mSELECT "mentors".* FROM "mentors"[0m
+  Rendered mentors/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 51ms (Views: 48.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/mentors/6/edit" for 127.0.0.1 at 2017-06-25 03:25:08 -0400
+Processing by MentorsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mMentor Load (0.1ms)[0m  [1m[34mSELECT  "mentors".* FROM "mentors" WHERE "mentors"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering mentors/edit.html.erb within layouts/application
+  Rendered mentors/_form.html.erb (18.9ms) [cache miss]
+  Rendered mentors/edit.html.erb within layouts/application (22.8ms)
+Completed 200 OK in 59ms (Views: 55.6ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/mentors/6" for 127.0.0.1 at 2017-06-25 03:25:19 -0400
+Processing by MentorsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SgGa5xUeYAOuIOEqsQLQUyYDyyK9/hVKWTJHkC4ehDcHsVZMIT4zWlTVOVa2JNwilDhyTxANTEJj9Kyx5ymQxw==", "mentor"=>{"first_name"=>"Elle", "last_name"=>"Baker", "email"=>"ellebaker@hotmail.com", "skills"=>"BC Calc, Physics, General Engineering"}, "commit"=>"Update Mentor", "id"=>"6"}
+  [1m[36mMentor Load (0.1ms)[0m  [1m[34mSELECT  "mentors".* FROM "mentors" WHERE "mentors"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "mentors" SET "skills" = ?, "updated_at" = ? WHERE "mentors"."id" = ?[0m  [["skills", "BC Calc, Physics, General Engineering"], ["updated_at", "2017-06-25 07:25:19.104191"], ["id", 6]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/mentors/6
+Completed 302 Found in 7ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/mentors/6" for 127.0.0.1 at 2017-06-25 03:25:19 -0400
+Processing by MentorsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mMentor Load (0.2ms)[0m  [1m[34mSELECT  "mentors".* FROM "mentors" WHERE "mentors"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering mentors/show.html.erb within layouts/application
+  Rendered mentors/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 27ms (Views: 24.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mentors" for 127.0.0.1 at 2017-06-25 03:25:20 -0400
+Processing by MentorsController#index as HTML
+  Rendering mentors/index.html.erb within layouts/application
+  [1m[36mMentor Load (0.4ms)[0m  [1m[34mSELECT "mentors".* FROM "mentors"[0m
+  Rendered mentors/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 56ms (Views: 53.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/mentors/7" for 127.0.0.1 at 2017-06-25 03:25:23 -0400
+Processing by MentorsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mMentor Load (0.2ms)[0m  [1m[34mSELECT  "mentors".* FROM "mentors" WHERE "mentors"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering mentors/show.html.erb within layouts/application
+  Rendered mentors/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 49ms (Views: 46.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mentors/7/edit" for 127.0.0.1 at 2017-06-25 03:25:24 -0400
+Processing by MentorsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mMentor Load (0.1ms)[0m  [1m[34mSELECT  "mentors".* FROM "mentors" WHERE "mentors"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering mentors/edit.html.erb within layouts/application
+  Rendered mentors/_form.html.erb (3.5ms) [cache miss]
+  Rendered mentors/edit.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 62ms (Views: 59.6ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/mentors/7" for 127.0.0.1 at 2017-06-25 03:25:43 -0400
+Processing by MentorsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EFSL2zO145ZuIkpTPcPl4h98qyEpHCcn9gCFrjEozR6K1Di6DK+aKUioJGvx4enMDWm3QXCLqymwBaPyoyP/gQ==", "mentor"=>{"first_name"=>"Jerry", "last_name"=>"Thomas", "email"=>"tomjerry@goldmansachs.com", "skills"=>"Singing, Data Science, R"}, "commit"=>"Update Mentor", "id"=>"7"}
+  [1m[36mMentor Load (0.2ms)[0m  [1m[34mSELECT  "mentors".* FROM "mentors" WHERE "mentors"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "mentors" SET "skills" = ?, "updated_at" = ? WHERE "mentors"."id" = ?[0m  [["skills", "Singing, Data Science, R"], ["updated_at", "2017-06-25 07:25:43.895385"], ["id", 7]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/mentors/7
+Completed 302 Found in 8ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/mentors/7" for 127.0.0.1 at 2017-06-25 03:25:43 -0400
+Processing by MentorsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mMentor Load (0.2ms)[0m  [1m[34mSELECT  "mentors".* FROM "mentors" WHERE "mentors"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering mentors/show.html.erb within layouts/application
+  Rendered mentors/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 40ms (Views: 36.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mentors" for 127.0.0.1 at 2017-06-25 03:25:46 -0400
+Processing by MentorsController#index as HTML
+  Rendering mentors/index.html.erb within layouts/application
+  [1m[36mMentor Load (0.4ms)[0m  [1m[34mSELECT "mentors".* FROM "mentors"[0m
+  Rendered mentors/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 52ms (Views: 49.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/mentors/8" for 127.0.0.1 at 2017-06-25 03:25:51 -0400
+Processing by MentorsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mMentor Load (0.1ms)[0m  [1m[34mSELECT  "mentors".* FROM "mentors" WHERE "mentors"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering mentors/show.html.erb within layouts/application
+  Rendered mentors/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 48ms (Views: 45.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/mentors/8/edit" for 127.0.0.1 at 2017-06-25 03:25:52 -0400
+Processing by MentorsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mMentor Load (0.1ms)[0m  [1m[34mSELECT  "mentors".* FROM "mentors" WHERE "mentors"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering mentors/edit.html.erb within layouts/application
+  Rendered mentors/_form.html.erb (4.9ms) [cache miss]
+  Rendered mentors/edit.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 70ms (Views: 64.2ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/mentors/8" for 127.0.0.1 at 2017-06-25 03:25:57 -0400
+Processing by MentorsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BY/0ujegU7pzY7yYmOs92Eyd43yecf5wmZ9avRNFe3zC8AwoaESJ0DLd9NyWpFw+VdCOmBgbTcMy9g7UNGH+XQ==", "mentor"=>{"first_name"=>"Sofia", "last_name"=>"Vergara", "email"=>"sofverg@abc.com", "skills"=>"Acting, Spanish, French"}, "commit"=>"Update Mentor", "id"=>"8"}
+  [1m[36mMentor Load (0.2ms)[0m  [1m[34mSELECT  "mentors".* FROM "mentors" WHERE "mentors"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "mentors" SET "skills" = ?, "updated_at" = ? WHERE "mentors"."id" = ?[0m  [["skills", "Acting, Spanish, French"], ["updated_at", "2017-06-25 07:25:57.749411"], ["id", 8]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/mentors/8
+Completed 302 Found in 9ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/mentors/8" for 127.0.0.1 at 2017-06-25 03:25:57 -0400
+Processing by MentorsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mMentor Load (0.1ms)[0m  [1m[34mSELECT  "mentors".* FROM "mentors" WHERE "mentors"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering mentors/show.html.erb within layouts/application
+  Rendered mentors/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 29ms (Views: 26.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/mentors" for 127.0.0.1 at 2017-06-25 03:25:59 -0400
+Processing by MentorsController#index as HTML
+  Rendering mentors/index.html.erb within layouts/application
+  [1m[36mMentor Load (0.3ms)[0m  [1m[34mSELECT "mentors".* FROM "mentors"[0m
+  Rendered mentors/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 49ms (Views: 47.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/mentors/9" for 127.0.0.1 at 2017-06-25 03:26:05 -0400
+Processing by MentorsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mMentor Load (0.1ms)[0m  [1m[34mSELECT  "mentors".* FROM "mentors" WHERE "mentors"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering mentors/show.html.erb within layouts/application
+  Rendered mentors/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 45ms (Views: 42.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/mentors/9/edit" for 127.0.0.1 at 2017-06-25 03:26:06 -0400
+Processing by MentorsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mMentor Load (0.1ms)[0m  [1m[34mSELECT  "mentors".* FROM "mentors" WHERE "mentors"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering mentors/edit.html.erb within layouts/application
+  Rendered mentors/_form.html.erb (3.0ms) [cache miss]
+  Rendered mentors/edit.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 57ms (Views: 54.7ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/mentors/9" for 127.0.0.1 at 2017-06-25 03:26:23 -0400
+Processing by MentorsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tQGa0g62HlFZ1PGeoZLCDNRRJ5os7dZW8RFX2t8TDGoVk4CjazDRG+1ijD5EPfBsXHiB1Fpt7gu0QJZ8Ujw10Q==", "mentor"=>{"first_name"=>"Mary", "last_name"=>"Lamb", "email"=>"mary@mary.com", "skills"=>"Farming, Hip Hop Dancing, Breakdancing, Popping, Locking"}, "commit"=>"Update Mentor", "id"=>"9"}
+  [1m[36mMentor Load (0.1ms)[0m  [1m[34mSELECT  "mentors".* FROM "mentors" WHERE "mentors"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "mentors" SET "skills" = ?, "updated_at" = ? WHERE "mentors"."id" = ?[0m  [["skills", "Farming, Hip Hop Dancing, Breakdancing, Popping, Locking"], ["updated_at", "2017-06-25 07:26:23.734741"], ["id", 9]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/mentors/9
+Completed 302 Found in 7ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/mentors/9" for 127.0.0.1 at 2017-06-25 03:26:23 -0400
+Processing by MentorsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mMentor Load (0.1ms)[0m  [1m[34mSELECT  "mentors".* FROM "mentors" WHERE "mentors"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering mentors/show.html.erb within layouts/application
+  Rendered mentors/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 39ms (Views: 36.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/mentors" for 127.0.0.1 at 2017-06-25 03:26:25 -0400
+Processing by MentorsController#index as HTML
+  Rendering mentors/index.html.erb within layouts/application
+  [1m[36mMentor Load (0.5ms)[0m  [1m[34mSELECT "mentors".* FROM "mentors"[0m
+  Rendered mentors/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 49ms (Views: 45.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/mentors/11/edit" for 127.0.0.1 at 2017-06-25 03:26:33 -0400
+Processing by MentorsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mMentor Load (0.1ms)[0m  [1m[34mSELECT  "mentors".* FROM "mentors" WHERE "mentors"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering mentors/edit.html.erb within layouts/application
+  Rendered mentors/_form.html.erb (3.2ms) [cache miss]
+  Rendered mentors/edit.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 50ms (Views: 47.9ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/mentors/11" for 127.0.0.1 at 2017-06-25 03:26:52 -0400
+Processing by MentorsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"poaB2D/xM9TC8DtDlthAv8exUIFWIJg2ksXLcFTFCpCmzSTa0KojlNINXavFjXij0Xl3H3mH547RfNHmOXe46w==", "mentor"=>{"first_name"=>"Ashley", "last_name"=>"Gavin", "email"=>"ashley@girlswhocode.com", "skills"=>"Comedy, Animal Control"}, "commit"=>"Update Mentor", "id"=>"11"}
+  [1m[36mMentor Load (0.1ms)[0m  [1m[34mSELECT  "mentors".* FROM "mentors" WHERE "mentors"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "mentors" SET "skills" = ?, "updated_at" = ? WHERE "mentors"."id" = ?[0m  [["skills", "Comedy, Animal Control"], ["updated_at", "2017-06-25 07:26:52.454435"], ["id", 11]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/mentors/11
+Completed 302 Found in 6ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/mentors/11" for 127.0.0.1 at 2017-06-25 03:26:52 -0400
+Processing by MentorsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mMentor Load (0.2ms)[0m  [1m[34mSELECT  "mentors".* FROM "mentors" WHERE "mentors"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering mentors/show.html.erb within layouts/application
+  Rendered mentors/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 29ms (Views: 26.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mentors" for 127.0.0.1 at 2017-06-25 03:26:54 -0400
+Processing by MentorsController#index as HTML
+  Rendering mentors/index.html.erb within layouts/application
+  [1m[36mMentor Load (0.3ms)[0m  [1m[34mSELECT "mentors".* FROM "mentors"[0m
+  Rendered mentors/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 49ms (Views: 46.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/mentors/new" for 127.0.0.1 at 2017-06-25 03:27:03 -0400
+Processing by MentorsController#new as HTML
+  Rendering mentors/new.html.erb within layouts/application
+  Rendered mentors/_form.html.erb (2.4ms) [cache miss]
+  Rendered mentors/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 52ms (Views: 49.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mentors" for 127.0.0.1 at 2017-06-25 03:27:05 -0400
+Processing by MentorsController#index as HTML
+  Rendering mentors/index.html.erb within layouts/application
+  [1m[36mMentor Load (0.3ms)[0m  [1m[34mSELECT "mentors".* FROM "mentors"[0m
+  Rendered mentors/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 68ms (Views: 65.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pages/myMentors" for 127.0.0.1 at 2017-06-25 03:27:12 -0400
+Processing by PagesController#myMentors as HTML
+  Rendering pages/myMentors.html.erb within layouts/application
+  Rendered pages/myMentors.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 48ms (Views: 44.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myMentors" for 127.0.0.1 at 2017-06-25 03:28:06 -0400
+Processing by PagesController#myMentors as HTML
+  Rendering pages/myMentors.html.erb within layouts/application
+  Rendered pages/myMentors.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 50ms (Views: 47.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mentors/show" for 127.0.0.1 at 2017-06-25 03:28:09 -0400
+Processing by MentorsController#show as HTML
+  [1m[36mMentor Load (0.2ms)[0m  [1m[34mSELECT  "mentors".* FROM "mentors" WHERE "mentors"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Mentor with 'id'=):
+  
+app/controllers/mentors_controller.rb:67:in `set_mentor'
+Started GET "/pages/myMentors" for 127.0.0.1 at 2017-06-25 03:28:37 -0400
+Processing by PagesController#myMentors as HTML
+  Rendering pages/myMentors.html.erb within layouts/application
+  Rendered pages/myMentors.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 34ms (Views: 31.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mentors" for 127.0.0.1 at 2017-06-25 03:28:37 -0400
+Processing by MentorsController#index as HTML
+  Rendering mentors/index.html.erb within layouts/application
+  [1m[36mMentor Load (0.3ms)[0m  [1m[34mSELECT "mentors".* FROM "mentors"[0m
+  Rendered mentors/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 64ms (Views: 60.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/mentors/8" for 127.0.0.1 at 2017-06-25 03:28:40 -0400
+Processing by MentorsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mMentor Load (0.1ms)[0m  [1m[34mSELECT  "mentors".* FROM "mentors" WHERE "mentors"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering mentors/show.html.erb within layouts/application
+  Rendered mentors/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 49ms (Views: 45.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-25 03:29:05 -0400
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 37ms (Views: 34.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mentors" for 127.0.0.1 at 2017-06-25 03:29:08 -0400
+Processing by MentorsController#index as HTML
+  Rendering mentors/index.html.erb within layouts/application
+  [1m[36mMentor Load (0.3ms)[0m  [1m[34mSELECT "mentors".* FROM "mentors"[0m
+  Rendered mentors/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 53ms (Views: 49.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-25 03:30:53 -0400
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 36ms (Views: 34.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myMentors" for 127.0.0.1 at 2017-06-25 03:30:56 -0400
+Processing by PagesController#myMentors as HTML
+  Rendering pages/myMentors.html.erb within layouts/application
+  Rendered pages/myMentors.html.erb within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `first_name' for nil:NilClass):
+    2: 
+    3: <p>
+    4:   <strong>First name:</strong>
+    5:   <%= @mentor.first_name %>
+    6: </p>
+    7: 
+    8: <p>
+  
+app/views/pages/myMentors.html.erb:5:in `_app_views_pages_my_entors_html_erb___849952610847493084_70230282804860'
+Started GET "/pages/myMentors" for 127.0.0.1 at 2017-06-25 03:33:31 -0400
+Processing by PagesController#myMentors as HTML
+  Rendering pages/myMentors.html.erb within layouts/application
+  Rendered pages/myMentors.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `first_name' for nil:NilClass):
+    2: 
+    3: <p>
+    4:   <strong>First name:</strong>
+    5:   <%= @mentor.first_name %>
+    6: </p>
+    7: 
+    8: <p>
+  
+app/views/pages/myMentors.html.erb:5:in `_app_views_pages_my_entors_html_erb___849952610847493084_70230291135960'
+Started GET "/mentors" for 127.0.0.1 at 2017-06-25 03:34:16 -0400
+Processing by MentorsController#index as HTML
+  Rendering mentors/index.html.erb within layouts/application
+  [1m[36mMentor Load (0.2ms)[0m  [1m[34mSELECT "mentors".* FROM "mentors"[0m
+  Rendered mentors/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 50ms (Views: 48.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-25 03:35:02 -0400
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 34ms (Views: 30.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mentors" for 127.0.0.1 at 2017-06-25 03:35:05 -0400
+Processing by MentorsController#index as HTML
+  Rendering mentors/index.html.erb within layouts/application
+  [1m[36mMentor Load (0.2ms)[0m  [1m[34mSELECT "mentors".* FROM "mentors"[0m
+  Rendered mentors/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 33ms (Views: 29.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-25 03:35:11 -0400
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 29ms (Views: 27.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/myMentors" for 127.0.0.1 at 2017-06-25 03:35:13 -0400
+Processing by PagesController#myMentors as HTML
+  Rendering pages/myMentors.html.erb within layouts/application
+  Rendered pages/myMentors.html.erb within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `first_name' for nil:NilClass):
+    2: 
+    3: <p>
+    4:   <strong>First name:</strong>
+    5:   <%= @mentor.first_name %>
+    6: </p>
+    7: 
+    8: <p>
+  
+app/views/pages/myMentors.html.erb:5:in `_app_views_pages_my_entors_html_erb___849952610847493084_70230242190640'
+Started GET "/pages/" for 127.0.0.1 at 2017-06-25 03:37:33 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/pages"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-06-25 03:37:39 -0400
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 37ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/profile" for 127.0.0.1 at 2017-06-25 03:37:44 -0400
+Processing by PagesController#profile as HTML
+  Rendering pages/profile.html.erb within layouts/application
+  Rendered pages/profile.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 48ms (Views: 45.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/location" for 127.0.0.1 at 2017-06-25 03:45:07 -0400
+Processing by PagesController#location as HTML
+  Rendering pages/location.html.erb within layouts/application
+  Rendered pages/location.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 110ms (Views: 104.2ms)
+
+
+Started GET "/pages/profile" for 127.0.0.1 at 2017-06-25 03:45:08 -0400
+Processing by PagesController#profile as HTML
+  Rendering pages/profile.html.erb within layouts/application
+  Rendered pages/profile.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 38ms (Views: 35.1ms)
+
+
+Started GET "/pages/myMentors" for 127.0.0.1 at 2017-06-25 03:45:10 -0400
+Processing by PagesController#myMentors as HTML
+Completed 500 Internal Server Error in 3ms
+
+
+  
+NameError (uninitialized constant PagesController::Mentors):
+  
+app/controllers/pages_controller.rb:15:in `myMentors'
+Started GET "/pages/myMentors" for 127.0.0.1 at 2017-06-25 03:45:21 -0400
+Processing by PagesController#myMentors as HTML
+  Rendering pages/myMentors.html.erb within layouts/application
+  Rendered pages/myMentors.html.erb within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 11ms
+
+
+  
+ActionView::Template::Error (undefined method `first_name' for nil:NilClass):
+    2: 
+    3: <p>
+    4:   <strong>First name:</strong>
+    5:   <%= @mentor.first_name %>
+    6: </p>
+    7: 
+    8: <p>
+  
+app/views/pages/myMentors.html.erb:5:in `_app_views_pages_my_entors_html_erb___849952610847493084_70230245378200'
+Started GET "/pages/" for 127.0.0.1 at 2017-06-25 03:47:02 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/pages"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-06-25 03:47:32 -0400
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 35ms (Views: 33.0ms)
+
+
+Started GET "/pages/myMentors" for 127.0.0.1 at 2017-06-25 03:47:35 -0400
+Processing by PagesController#myMentors as HTML
+  Rendering pages/myMentors.html.erb within layouts/application
+  Rendered pages/myMentors.html.erb within layouts/application (5.4ms)
+Completed 500 Internal Server Error in 11ms
+
+
+  
+ActionView::Template::Error (undefined method `first_name' for nil:NilClass):
+    2: 
+    3: <p>
+    4:   <strong>First name:</strong>
+    5:   <%= @mentor.first_name %>
+    6: </p>
+    7: 
+    8: <p>
+  
+app/views/pages/myMentors.html.erb:5:in `_app_views_pages_my_entors_html_erb___849952610847493084_70230271136060'
+Started GET "/pages/myMentors" for 127.0.0.1 at 2017-06-25 03:49:00 -0400
+Processing by PagesController#myMentors as HTML
+  Rendering pages/myMentors.html.erb within layouts/application
+  Rendered pages/myMentors.html.erb within layouts/application (5.7ms)
+Completed 500 Internal Server Error in 11ms
+
+
+  
+ActionView::Template::Error (undefined method `first_name' for nil:NilClass):
+    2: 
+    3: <p>
+    4:   <strong>First name:</strong>
+    5:   <%= @mentor.first_name %>
+    6: </p>
+    7: 
+    8: <p>
+  
+app/views/pages/myMentors.html.erb:5:in `_app_views_pages_my_entors_html_erb___849952610847493084_70230242852940'
+Started GET "/" for 127.0.0.1 at 2017-06-25 03:49:04 -0400
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 33ms (Views: 31.6ms)
+
+
+Started GET "/pages/myMentors" for 127.0.0.1 at 2017-06-25 03:49:06 -0400
+Processing by PagesController#myMentors as HTML
+  Rendering pages/myMentors.html.erb within layouts/application
+  Rendered pages/myMentors.html.erb within layouts/application (6.4ms)
+Completed 500 Internal Server Error in 11ms
+
+
+  
+ActionView::Template::Error (undefined method `first_name' for nil:NilClass):
+    2: 
+    3: <p>
+    4:   <strong>First name:</strong>
+    5:   <%= @mentor.first_name %>
+    6: </p>
+    7: 
+    8: <p>
+  
+app/views/pages/myMentors.html.erb:5:in `_app_views_pages_my_entors_html_erb___849952610847493084_70230246005980'
+Started GET "/pages/myMentors" for 127.0.0.1 at 2017-06-25 03:49:32 -0400
+Processing by PagesController#myMentors as HTML
+  Rendering pages/myMentors.html.erb within layouts/application
+  Rendered pages/myMentors.html.erb within layouts/application (5.3ms)
+Completed 500 Internal Server Error in 10ms
+
+
+  
+ActionView::Template::Error (undefined method `first_name' for nil:NilClass):
+    2: 
+    3: <p>
+    4:   <strong>First name:</strong>
+    5:   <%= @mentor.first_name %>
+    6: </p>
+    7: 
+    8: <p>
+  
+app/views/pages/myMentors.html.erb:5:in `_app_views_pages_my_entors_html_erb___849952610847493084_70230272257540'
+Started GET "/" for 127.0.0.1 at 2017-06-25 03:49:36 -0400
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 33ms (Views: 30.9ms)
+
+
+Started GET "/mentors/index" for 127.0.0.1 at 2017-06-25 03:49:38 -0400
+Processing by MentorsController#index as HTML
+  Rendering mentors/index.html.erb within layouts/application
+  [1m[36mMentor Load (0.7ms)[0m  [1m[34mSELECT "mentors".* FROM "mentors"[0m
+  Rendered mentors/index.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 77ms (Views: 63.9ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/mentors/index" for 127.0.0.1 at 2017-06-25 03:50:39 -0400
+Processing by MentorsController#index as HTML
+  Rendering mentors/index.html.erb within layouts/application
+  [1m[36mMentor Load (0.4ms)[0m  [1m[34mSELECT "mentors".* FROM "mentors"[0m
+  Rendered mentors/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 78ms (Views: 75.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/mentors/index" for 127.0.0.1 at 2017-06-25 03:52:00 -0400
+Processing by MentorsController#index as HTML
+  Rendering mentors/index.html.erb within layouts/application
+  [1m[36mMentor Load (0.3ms)[0m  [1m[34mSELECT "mentors".* FROM "mentors"[0m
+  Rendered mentors/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 103ms (Views: 99.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-25 03:52:26 -0400
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (271.8ms)
+Completed 500 Internal Server Error in 277ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `mentors_new_path' for #<#<Class:0x007fbf815ab6d8>:0x007fbf870d8ab0>
+Did you mean?  mentors_index_path
+               mentors_path
+               mentors_edit_path
+               mentors_show_path):
+     9: 	    	  <div class="row">
+    10: 	    	    <div class="col-lg-6">
+    11: 		          <span class="btn btn-lg btn-primary register_buttons" role="button">
+    12: 		          	<%= link_to 'Register as Mentee', mentors_new_path %>
+    13: 		          </span>
+    14: 		        </div>
+    15: 		        <div class="col-lg-6">
+  
+app/views/pages/about.html.erb:12:in `_app_views_pages_about_html_erb__2836556637447697274_70230290647600'
+Started GET "/" for 127.0.0.1 at 2017-06-25 03:52:51 -0400
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 39ms (Views: 37.3ms)
+
+
+Started GET "/mentors/new" for 127.0.0.1 at 2017-06-25 03:52:53 -0400
+Processing by MentorsController#new as HTML
+  Rendering mentors/new.html.erb within layouts/application
+  Rendered mentors/_form.html.erb (5.1ms) [cache miss]
+  Rendered mentors/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 62ms (Views: 34.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/mentors/new" for 127.0.0.1 at 2017-06-25 03:53:05 -0400
+Processing by MentorsController#new as HTML
+  Rendering mentors/new.html.erb within layouts/application
+  Rendered mentors/_form.html.erb (5.2ms) [cache miss]
+  Rendered mentors/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 68ms (Views: 65.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mentors" for 127.0.0.1 at 2017-06-25 03:54:55 -0400
+Processing by MentorsController#index as HTML
+  Rendering mentors/index.html.erb within layouts/application
+  [1m[36mMentor Load (1.1ms)[0m  [1m[34mSELECT "mentors".* FROM "mentors"[0m
+  Rendered mentors/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 63ms (Views: 59.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/mentors" for 127.0.0.1 at 2017-06-25 03:55:17 -0400
+Processing by MentorsController#index as HTML
+  Rendering mentors/index.html.erb within layouts/application
+  [1m[36mMentor Load (0.2ms)[0m  [1m[34mSELECT "mentors".* FROM "mentors"[0m
+  Rendered mentors/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 40ms (Views: 37.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-25 03:55:23 -0400
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 59ms (Views: 57.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-25 03:56:14 -0400
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 32ms (Views: 30.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-25 04:04:20 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.1.1) lib/active_record/migration.rb:576:in `check_pending!'
+activerecord (5.1.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateMentees (20170625080043)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "mentees" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "university" varchar, "email" varchar, "skills" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_mentees_on_email" ON "mentees" ("email")[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170625080043"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_mentees_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_mentees_on_email' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_mentors_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_mentors_on_email' AND type='index'
+[0m
+Started GET "/" for 127.0.0.1 at 2017-06-25 04:04:51 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (266.0ms)
+Completed 500 Internal Server Error in 272ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `mentees_new_path' for #<#<Class:0x007fbf84c9ca98>:0x007fbf86208300>
+Did you mean?  mentees_path
+               mentors_new_path):
+     9: 	    	  <div class="row">
+    10: 	    	    <div class="col-lg-6">
+    11: 		          <span class="btn btn-lg btn-primary register_buttons" role="button">
+    12: 		          	<%= link_to 'Register as Mentee', mentees_new_path %>
+    13: 		          </span>
+    14: 		        </div>
+    15: 		        <div class="col-lg-6">
+  
+app/views/pages/about.html.erb:12:in `_app_views_pages_about_html_erb__2836556637447697274_70230271651420'
+Started GET "/" for 127.0.0.1 at 2017-06-25 04:05:01 -0400
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (242.8ms)
+Completed 500 Internal Server Error in 250ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `mentees_new_path' for #<#<Class:0x007fbf84c9ca98>:0x007fbf81c02ef0>
+Did you mean?  mentees_path
+               mentors_new_path):
+     9: 	    	  <div class="row">
+    10: 	    	    <div class="col-lg-6">
+    11: 		          <span class="btn btn-lg btn-primary register_buttons" role="button">
+    12: 		          	<%= link_to 'Register as Mentee', mentees_new_path %>
+    13: 		          </span>
+    14: 		        </div>
+    15: 		        <div class="col-lg-6">
+  
+app/views/pages/about.html.erb:12:in `_app_views_pages_about_html_erb__2836556637447697274_70230246170500'
+Started GET "/" for 127.0.0.1 at 2017-06-25 04:06:12 -0400
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (247.9ms)
+Completed 500 Internal Server Error in 255ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `mentees_new_path' for #<#<Class:0x007fbf84c9ca98>:0x007fbf81cfe8e0>
+Did you mean?  mentees_path
+               mentors_new_path):
+     9: 	    	  <div class="row">
+    10: 	    	    <div class="col-lg-6">
+    11: 		          <span class="btn btn-lg btn-primary register_buttons" role="button">
+    12: 		          	<%= link_to 'Register as Mentee', mentees_new_path %>
+    13: 		          </span>
+    14: 		        </div>
+    15: 		        <div class="col-lg-6">
+  
+app/views/pages/about.html.erb:12:in `_app_views_pages_about_html_erb__2836556637447697274_70230246685420'
+Started GET "/" for 127.0.0.1 at 2017-06-25 04:08:06 -0400
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 137ms (Views: 135.1ms)
+
+
+Started GET "/pages/profile" for 127.0.0.1 at 2017-06-25 04:08:32 -0400
+Processing by PagesController#profile as HTML
+  Rendering pages/profile.html.erb within layouts/application
+  Rendered pages/profile.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 55ms (Views: 50.4ms)
+
+
+Started GET "/pages/profile" for 127.0.0.1 at 2017-06-25 04:08:36 -0400
+Processing by PagesController#profile as HTML
+  Rendering pages/profile.html.erb within layouts/application
+  Rendered pages/profile.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 68ms (Views: 65.3ms)
+
+

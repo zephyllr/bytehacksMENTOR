@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'pages/myMentees'
+
+  resources :mentees
+
   get 'pages/profile'
 
   get 'pages/mentor'
@@ -16,6 +20,16 @@ Rails.application.routes.draw do
   get 'mentors/show'
 
   get 'mentors/edit'
+
+  get 'mentors/new'
+
+  get 'mentees/index'
+
+  get 'mentees/show'
+
+  get 'mentees/edit'
+
+  get 'mentees/new'
 
   resources :mentors
   get 'pages/alice'

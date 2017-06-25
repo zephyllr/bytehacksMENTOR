@@ -23,14 +23,13 @@
             <li><%= link_to 'About', pages_about_path %></li>
             <li><%= link_to 'Profile', pages_profile_path %></li>
             <li>
-                <%= link_to 'Mentor', pages_mentor_path %>
                 <%= link_to 'Location', pages_location_path %>
                 <%= link_to 'Categories', pages_categories_path %>
             </li>
             <li><%= link_to 'My Mentors', pages_myMentors_path %></li>
         </ul>
     </div>
-
+ 
     <!-- /#sidebar-wrapper -->
 
     <div id="page-content-wrapper">
@@ -45,7 +44,11 @@
 
    </div>
 
-    <%= yield %>
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+			<%= yield %>
+		</div>
+	</div>
 
     <!-- Menu Toggle Script -->
     <script>

@@ -13,6 +13,10 @@ Rails.application.routes.draw do
 
   get 'mentors/index'
 
+  get 'mentors/show'
+
+  get 'mentors/edit'
+
   resources :mentors
   get 'pages/alice'
   root 'pages#about'

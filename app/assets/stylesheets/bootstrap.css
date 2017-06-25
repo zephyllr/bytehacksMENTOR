@@ -1097,12 +1097,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #337ab7;
+  color: #8acffc;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #23527c;
+  color: #8acffc;
   text-decoration: underline;
 }
 a:focus {
@@ -1337,11 +1337,11 @@ mark,
   color: #777;
 }
 .text-primary {
-  color: #337ab7;
+  color: #8acffc;
 }
 a.text-primary:hover,
 a.text-primary:focus {
-  color: #286090;
+  color: #8acffc;
 }
 .text-success {
   color: #3c763d;
@@ -1373,11 +1373,11 @@ a.text-danger:focus {
 }
 .bg-primary {
   color: #fff;
-  background-color: #337ab7;
+  background-color: #8acffc;
 }
 a.bg-primary:hover,
 a.bg-primary:focus {
-  background-color: #286090;
+  background-color: #8acffc;
 }
 .bg-success {
   background-color: #dff0d8;
@@ -2113,7 +2113,7 @@ pre code {
     width: 58.33333333%;
   }
   .col-lg-6 {
-    width: 50%;
+    width: 100%;
   }
   .col-lg-5 {
     width: 41.66666667%;
@@ -3115,26 +3115,27 @@ fieldset[disabled] .btn-default.focus {
 }
 .btn-primary {
   color: #fff;
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  background-color: #8acffc;
+  border-color: #8acffc;
 }
+
 .btn-primary:focus,
 .btn-primary.focus {
   color: #fff;
-  background-color: #286090;
-  border-color: #122b40;
+  background-color: #8acffc;
+  border-color: #8acffc;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #286090;
-  border-color: #204d74;
+  background-color: #8acffc;
+  border-color: #8acffc;
 }
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #fff;
-  background-color: #286090;
-  border-color: #204d74;
+  background-color: #8acffc;
+  border-color: #8acffc;
 }
 .btn-primary:active:hover,
 .btn-primary.active:hover,
@@ -3146,8 +3147,8 @@ fieldset[disabled] .btn-default.focus {
 .btn-primary.active.focus,
 .open > .dropdown-toggle.btn-primary.focus {
   color: #fff;
-  background-color: #204d74;
-  border-color: #122b40;
+  background-color: #8acffc;
+  border-color: #8acffc;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -3163,11 +3164,11 @@ fieldset[disabled] .btn-primary:focus,
 .btn-primary.disabled.focus,
 .btn-primary[disabled].focus,
 fieldset[disabled] .btn-primary.focus {
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  background-color: #8acffc;
+  border-color: #8acffc;
 }
 .btn-primary .badge {
-  color: #337ab7;
+  color: #8acffc;
   background-color: #fff;
 }
 .btn-success {
@@ -4960,7 +4961,7 @@ a.badge:focus {
   padding-bottom: 30px;
   margin-bottom: 30px;
   color: inherit;
-  background-color: #eee;
+  background-color: skyblue;
 }
 .jumbotron h1,
 .jumbotron .h1 {

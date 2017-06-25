@@ -14,7 +14,7 @@ p, ol, ul, td {
 }
 
 pre {
-  background-color: #eee;
+  background-color: red;
   padding: 10px;
   font-size: 11px;
 }
@@ -22,14 +22,16 @@ pre {
 a {
   color: #000;
 
-  &:visited {
-    color: #666;
-  }
+&:visited {
+    color: #ffffff;
+}
 
-  &:hover {
+&:hover {
     color: #fff;
-    background-color: #000;
-  }
+    text-decoration: none;
+    
+}
+    
 }
 
 th {
